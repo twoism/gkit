@@ -8,7 +8,7 @@
 #import "GLocation.h"
 #include <HTTPRiot/HTTPRiot.h>
 #import <CoreLocation/CoreLocation.h>
-#import "PhoneNumber.h"
+#import "GPhoneNumber.h"
 
 #define GMAPS_KEY @"ABQIAAAAzRoZzKYM5qKOqJfF5rV9XBSdG0_H5fikhlv-IEqZhBC4z1KyBxQXs61Dpo8XUzt1tb1DA5qQ7sk6RQ"
 #define GMAPS_SIG @"582c1116317355adf613a6a843f19ece"
@@ -36,7 +36,7 @@
 		self.country	= [dictionary valueForKey:@"country"];
 		self.region		= [dictionary valueForKey:@"region"];
 		self.address	= [dictionary valueForKey:@"streetAddress"];
-		self.phone		= [[PhoneNumber alloc] initWithString:[[[dictionary valueForKey:@"phoneNumbers"] objectAtIndex:0] valueForKey:@"number"]];
+		self.phone		= [[GPhoneNumber alloc] initWithString:[[[dictionary valueForKey:@"phoneNumbers"] objectAtIndex:0] valueForKey:@"number"]];
 		
 		CLLocationCoordinate2D c;
 		c.latitude			= [[dictionary valueForKey:@"lat"] floatValue];

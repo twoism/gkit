@@ -30,8 +30,8 @@
 		D474DBFE1096B1EC00BD64E8 /* GLocationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D474DBFC1096B1EC00BD64E8 /* GLocationTest.m */; };
 		D4871A39109746BE00994658 /* CLLocation+Vector.m in Sources */ = {isa = PBXBuildFile; fileRef = D4871A38109746BE00994658 /* CLLocation+Vector.m */; };
 		D4871A3A109746BE00994658 /* CLLocation+Vector.m in Sources */ = {isa = PBXBuildFile; fileRef = D4871A38109746BE00994658 /* CLLocation+Vector.m */; };
-		D4871DB91097CF4100994658 /* PhoneNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = D4871DB81097CF4100994658 /* PhoneNumber.m */; };
-		D4871DBA1097CF4100994658 /* PhoneNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = D4871DB81097CF4100994658 /* PhoneNumber.m */; };
+		D4871DB91097CF4100994658 /* GPhoneNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = D4871DB81097CF4100994658 /* GPhoneNumber.m */; };
+		D4871DBA1097CF4100994658 /* GPhoneNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = D4871DB81097CF4100994658 /* GPhoneNumber.m */; };
 		D49830E1109A3378007270CE /* GDirectionStep.m in Sources */ = {isa = PBXBuildFile; fileRef = D49830E0109A3378007270CE /* GDirectionStep.m */; };
 		D49830E2109A3378007270CE /* GDirectionStep.m in Sources */ = {isa = PBXBuildFile; fileRef = D49830E0109A3378007270CE /* GDirectionStep.m */; };
 /* End PBXBuildFile section */
@@ -75,8 +75,8 @@
 		D474DBFC1096B1EC00BD64E8 /* GLocationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GLocationTest.m; path = ../GLocationTest.m; sourceTree = "<group>"; };
 		D4871A37109746BE00994658 /* CLLocation+Vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+Vector.h"; sourceTree = "<group>"; };
 		D4871A38109746BE00994658 /* CLLocation+Vector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+Vector.m"; sourceTree = "<group>"; };
-		D4871DB71097CF4100994658 /* PhoneNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneNumber.h; sourceTree = "<group>"; };
-		D4871DB81097CF4100994658 /* PhoneNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneNumber.m; sourceTree = "<group>"; };
+		D4871DB71097CF4100994658 /* GPhoneNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPhoneNumber.h; sourceTree = "<group>"; };
+		D4871DB81097CF4100994658 /* GPhoneNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPhoneNumber.m; sourceTree = "<group>"; };
 		D49830DF109A3378007270CE /* GDirectionStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDirectionStep.h; sourceTree = "<group>"; };
 		D49830E0109A3378007270CE /* GDirectionStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDirectionStep.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,9 +111,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D49831E4109A450A007270CE /* GKit */,
 				D4871DC51097D12D00994658 /* Tests */,
-				D4871DC41097D11000994658 /* Categories */,
-				D4871DC31097D0F800994658 /* Models */,
 				1D3623240D0F684500981E51 /* GKitAppDelegate.h */,
 				1D3623250D0F684500981E51 /* GKitAppDelegate.m */,
 			);
@@ -197,21 +196,6 @@
 			path = "libGHUnitIPhone3_0-0.4.13";
 			sourceTree = "<group>";
 		};
-		D4871DC31097D0F800994658 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				D474DBD01096AB0100BD64E8 /* GLocation.h */,
-				D474DBD11096AB0100BD64E8 /* GLocation.m */,
-				D4871DB71097CF4100994658 /* PhoneNumber.h */,
-				D4871DB81097CF4100994658 /* PhoneNumber.m */,
-				D42B76B41099F090002CE90A /* GDirection.h */,
-				D42B76B51099F090002CE90A /* GDirection.m */,
-				D49830DF109A3378007270CE /* GDirectionStep.h */,
-				D49830E0109A3378007270CE /* GDirectionStep.m */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
 		D4871DC41097D11000994658 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,6 +211,22 @@
 				D474DBFC1096B1EC00BD64E8 /* GLocationTest.m */,
 			);
 			name = Tests;
+			sourceTree = "<group>";
+		};
+		D49831E4109A450A007270CE /* GKit */ = {
+			isa = PBXGroup;
+			children = (
+				D4871DC41097D11000994658 /* Categories */,
+				D4871DB71097CF4100994658 /* GPhoneNumber.h */,
+				D4871DB81097CF4100994658 /* GPhoneNumber.m */,
+				D474DBD01096AB0100BD64E8 /* GLocation.h */,
+				D474DBD11096AB0100BD64E8 /* GLocation.m */,
+				D42B76B41099F090002CE90A /* GDirection.h */,
+				D42B76B51099F090002CE90A /* GDirection.m */,
+				D49830DF109A3378007270CE /* GDirectionStep.h */,
+				D49830E0109A3378007270CE /* GDirectionStep.m */,
+			);
+			name = GKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,7 +313,7 @@
 				D474DBD31096AB0100BD64E8 /* GLocation.m in Sources */,
 				D474DBFD1096B1EC00BD64E8 /* GLocationTest.m in Sources */,
 				D4871A3A109746BE00994658 /* CLLocation+Vector.m in Sources */,
-				D4871DBA1097CF4100994658 /* PhoneNumber.m in Sources */,
+				D4871DBA1097CF4100994658 /* GPhoneNumber.m in Sources */,
 				D42B76B71099F090002CE90A /* GDirection.m in Sources */,
 				D49830E2109A3378007270CE /* GDirectionStep.m in Sources */,
 			);
@@ -328,7 +328,7 @@
 				D474DBD21096AB0100BD64E8 /* GLocation.m in Sources */,
 				D474DBFE1096B1EC00BD64E8 /* GLocationTest.m in Sources */,
 				D4871A39109746BE00994658 /* CLLocation+Vector.m in Sources */,
-				D4871DB91097CF4100994658 /* PhoneNumber.m in Sources */,
+				D4871DB91097CF4100994658 /* GPhoneNumber.m in Sources */,
 				D42B76B61099F090002CE90A /* GDirection.m in Sources */,
 				D49830E1109A3378007270CE /* GDirectionStep.m in Sources */,
 			);

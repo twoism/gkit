@@ -62,9 +62,7 @@
 		GHAssertNotNil(s.stepDescription,nil);
 		GHAssertNotNil(s.distanceInMeters,nil);
 		GHAssertNotNil(s.durationInSeconds,nil);
-		NSLog(@"%@",s);
 	}
-	
 	
 	[self notify:kGHUnitWaitStatusSuccess forSelector:@selector(testDirections)];
 }
@@ -87,8 +85,6 @@
 	westPoint.longitude = -122.419415;
 	
 	CLLocation *myHouse = [[CLLocation alloc] initWithLatitude:33.760168 longitude:-84.33217];
-	
-	
 	GHAssertEqualStrings([myHouse directionFromCoordinate:westPoint], @"West", [NSString stringWithFormat:@"Should be west, got %@",[myHouse directionFromCoordinate:westPoint]]);
 	
 }

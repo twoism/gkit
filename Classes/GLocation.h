@@ -11,13 +11,13 @@
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
 
-@class PhoneNumber;
+@class GPhoneNumber;
 
 @interface GLocation : HRRestModel<MKAnnotation> {
 	NSString		*name;
 	NSString		*city;
 	NSString		*country;
-	PhoneNumber *phone;
+	GPhoneNumber *phone;
 	NSString		*region;
 	NSString		*address;
 	CLLocationCoordinate2D coordinate;
@@ -28,7 +28,7 @@
 @property(nonatomic,retain)			NSString *country;
 @property(nonatomic,retain)			NSString *region;
 @property(nonatomic,retain)			NSString *address;
-@property(nonatomic,retain)			PhoneNumber *phone;
+@property(nonatomic,retain)			GPhoneNumber *phone;
 @property(nonatomic,readwrite)	CLLocationCoordinate2D coordinate;
 
 + (id)getLocalResultsForLocation:(CLLocationCoordinate2D)loc 

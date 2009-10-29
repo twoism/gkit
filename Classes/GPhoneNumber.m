@@ -6,9 +6,9 @@
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
-#import "PhoneNumber.h"
+#import "GPhoneNumber.h"
 
-@implementation PhoneNumber
+@implementation GPhoneNumber
 
 @synthesize number;
 

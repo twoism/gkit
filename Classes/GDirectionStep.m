@@ -15,9 +15,9 @@
 
 - (void)dealloc
 {
-	[distanceInMeters release];
-	[durationInSeconds release];
-	[stepDescription release];
+	[distanceInMeters		release];
+	[durationInSeconds	release];
+	[stepDescription		release];
 	[super dealloc];
 }
 
@@ -29,9 +29,9 @@
 		self.distanceInMeters		= [NSNumber numberWithInt:[[[dictionary valueForKey:@"Distance"] valueForKey:@"meters"] intValue]];
 		self.durationInSeconds	= [NSNumber numberWithInt:[[[dictionary valueForKey:@"Duration"] valueForKey:@"seconds"] intValue]];
 		CLLocationCoordinate2D c;
-		c.latitude			= [[[[dictionary valueForKey:@"Point"] valueForKey:@"coordinates"] objectAtIndex:0] floatValue];
-		c.longitude			= [[[[dictionary valueForKey:@"Point"] valueForKey:@"coordinates"] objectAtIndex:1] floatValue];
-		self.coordinate = c;
+		c.latitude							= [[[[dictionary valueForKey:@"Point"] valueForKey:@"coordinates"] objectAtIndex:0] floatValue];
+		c.longitude							= [[[[dictionary valueForKey:@"Point"] valueForKey:@"coordinates"] objectAtIndex:1] floatValue];
+		self.coordinate					= c;
 	}
 	return self;
 }

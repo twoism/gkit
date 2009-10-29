@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface PhoneNumber : NSObject {
+@interface GPhoneNumber : NSObject {
 	NSString *number;
 }
 @property(nonatomic,retain) NSString *number;
