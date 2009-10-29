@@ -34,6 +34,8 @@
 		D4871DBA1097CF4100994658 /* GPhoneNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = D4871DB81097CF4100994658 /* GPhoneNumber.m */; };
 		D49830E1109A3378007270CE /* GDirectionStep.m in Sources */ = {isa = PBXBuildFile; fileRef = D49830E0109A3378007270CE /* GDirectionStep.m */; };
 		D49830E2109A3378007270CE /* GDirectionStep.m in Sources */ = {isa = PBXBuildFile; fileRef = D49830E0109A3378007270CE /* GDirectionStep.m */; };
+		D49831FA109A5528007270CE /* GRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = D49831F9109A5528007270CE /* GRoute.m */; };
+		D49831FB109A5528007270CE /* GRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = D49831F9109A5528007270CE /* GRoute.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +81,8 @@
 		D4871DB81097CF4100994658 /* GPhoneNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPhoneNumber.m; sourceTree = "<group>"; };
 		D49830DF109A3378007270CE /* GDirectionStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDirectionStep.h; sourceTree = "<group>"; };
 		D49830E0109A3378007270CE /* GDirectionStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDirectionStep.m; sourceTree = "<group>"; };
+		D49831F8109A5528007270CE /* GRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRoute.h; sourceTree = "<group>"; };
+		D49831F9109A5528007270CE /* GRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRoute.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +229,8 @@
 				D42B76B51099F090002CE90A /* GDirection.m */,
 				D49830DF109A3378007270CE /* GDirectionStep.h */,
 				D49830E0109A3378007270CE /* GDirectionStep.m */,
+				D49831F8109A5528007270CE /* GRoute.h */,
+				D49831F9109A5528007270CE /* GRoute.m */,
 			);
 			name = GKit;
 			sourceTree = "<group>";
@@ -316,6 +322,7 @@
 				D4871DBA1097CF4100994658 /* GPhoneNumber.m in Sources */,
 				D42B76B71099F090002CE90A /* GDirection.m in Sources */,
 				D49830E2109A3378007270CE /* GDirectionStep.m in Sources */,
+				D49831FB109A5528007270CE /* GRoute.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +338,7 @@
 				D4871DB91097CF4100994658 /* GPhoneNumber.m in Sources */,
 				D42B76B61099F090002CE90A /* GDirection.m in Sources */,
 				D49830E1109A3378007270CE /* GDirectionStep.m in Sources */,
+				D49831FA109A5528007270CE /* GRoute.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

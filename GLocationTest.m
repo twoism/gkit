@@ -3,6 +3,7 @@
 #import "GLocation.h"
 #import "GDirection.h"
 #import "GDirectionStep.h"
+#import "GRoute.h"
 #import <CoreLocation/CoreLocation.h>
 #import "CLLocation+Vector.h"
 
@@ -52,7 +53,7 @@
 		
 		[GDirection getDirectionsFromLocation:myHouse toLocation:cornerTavern withDelegate:self];
 	
-	[self waitForStatus:kGHUnitWaitStatusSuccess timeout:10.0];
+	[self waitForStatus:kGHUnitWaitStatusSuccess timeout:20.0];
 }
 
 - (void)directionsLoaded:(GDirection*)gd
@@ -65,6 +66,23 @@
 	}
 	
 	[self notify:kGHUnitWaitStatusSuccess forSelector:@selector(testDirections)];
+}
+
+- (void)testRouting 
+{
+	[self prepare];
+	
+	CLLocationCoordinate2D myHouse;
+	myHouse.latitude	= 33.760174;
+	myHouse.longitude = -84.332780;
+	
+	CLLocationCoordinate2D cornerTavern;
+	cornerTavern.latitude	= 33.679771;
+	cornerTavern.longitude = -84.440544;
+	
+	[GRoute getRouteFromLocation:myHouse toLocation:cornerTavern withDelegate:self];
+	
+	[self waitForStatus:kGHUnitWaitStatusSuccess timeout:10.0];
 }
 
 - (void)testShouldBeNorth
