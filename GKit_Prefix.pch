@@ -1,0 +1,9 @@
+//
+// Prefix header for all source files of the 'GKit' target in the 'GKit' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+		#include <HTTPRiot/HTTPRiot.h>
+#endif
