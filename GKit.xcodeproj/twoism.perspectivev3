@@ -268,9 +268,8 @@
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
+								<string>D49831E4109A450A007270CE</string>
 								<string>D4871DC51097D12D00994658</string>
-								<string>29B97315FDCFA39411CA2CEA</string>
-								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>19C28FACFE9D520D11CA2CBB</string>
 								<string>1C37FBAC04509CD000000102</string>
@@ -278,8 +277,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>5</integer>
-									<integer>4</integer>
+									<integer>14</integer>
+									<integer>13</integer>
 									<integer>2</integer>
 									<integer>0</integer>
 								</array>
@@ -332,20 +331,21 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>D49831F7109A45A2007270CE</string>
+										<string>D49832B5109A6490007270CE</string>
 										<key>history</key>
 										<array>
 											<string>D474DBE21096ABD300BD64E8</string>
 											<string>D4871DCD1097D1F500994658</string>
-											<string>D42B76BE1099F3A8002CE90A</string>
-											<string>D4983117109A3994007270CE</string>
 											<string>D4983119109A3994007270CE</string>
 											<string>D4983133109A3C2C007270CE</string>
 											<string>D498317D109A3E54007270CE</string>
-											<string>D49831BA109A4018007270CE</string>
 											<string>D49831E6109A452E007270CE</string>
 											<string>D49831F5109A45A2007270CE</string>
-											<string>D49831F6109A45A2007270CE</string>
+											<string>D4983200109A57E1007270CE</string>
+											<string>D4983201109A57E1007270CE</string>
+											<string>D4983204109A57E1007270CE</string>
+											<string>D498329E109A5FF3007270CE</string>
+											<string>D4983248109A5A9F007270CE</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -385,6 +385,8 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {1233, -27}}</string>
+										<key>RubberWindowFrame</key>
+										<string>0 59 1440 819 0 0 1440 878 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -400,7 +402,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {1233, -27}}</string>
+										<string>{{0, 0}, {614, 336}}</string>
 									</dict>
 									<key>Module</key>
 									<string>PBXProjectFindModule</string>
@@ -438,9 +440,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {1233, -27}}</string>
-										<key>RubberWindowFrame</key>
-										<string>0 59 1440 819 0 0 1440 878 </string>
+										<string>{{0, 0}, {568, 405}}</string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -468,11 +468,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>D49830CE109A3140007270CE</string>
+				<string>D49832B6109A6490007270CE</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>D49830CF109A3140007270CE</string>
+				<string>D49832B7109A6490007270CE</string>
 				<string>D474DBAE1096AA5800BD64E8</string>
-				<string>D49830D0109A3140007270CE</string>
+				<string>D49832B8109A6490007270CE</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -662,9 +662,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>D49831EA109A452E007270CE</string>
-		<string>D498318F109A3EA2007270CE</string>
-		<string>D4983190109A3EA2007270CE</string>
 		<string>/Users/twoism/dev/cocoa/GKit/GKit.xcodeproj</string>
 	</array>
 	<key>WindowString</key>

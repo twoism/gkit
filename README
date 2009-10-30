@@ -1,0 +1,25 @@
+GKit
+
+Google Local Search + Directions
+
+Local Search:
+
+CLLocationCoordinate2D myHouse;
+myHouse.latitude	= 33.760174;
+myHouse.longitude = -84.332780;
+[GLocation getLocalResultsForLocation:myHouse withQuery:@"Corner Tavern" withDelegate:self];
+
+Directions:
+
+CLLocationCoordinate2D myHouse;
+myHouse.latitude	= 33.760174;
+myHouse.longitude = -84.332780;
+
+CLLocationCoordinate2D cornerTavern;
+cornerTavern.latitude	= 33.679771;
+cornerTavern.longitude = -84.440544;
+
+[GDirection getDirectionsFromLocation:myHouse toLocation:cornerTavern withDelegate:self];
+
+
+Working on adding route coordinates for map overlays.
