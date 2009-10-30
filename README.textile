@@ -1,3 +1,5 @@
+GKit Google Local Search + Directions and Routing. Built on HTTPRiot (http://github.com/caged/httpriot)
+
 *Usage*
 
 <pre>
