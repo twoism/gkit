@@ -85,6 +85,11 @@
 	[self waitForStatus:kGHUnitWaitStatusSuccess timeout:10.0];
 }
 
+- (void)routeLoaded:(GRoute*)route
+{
+	[self notify:kGHUnitWaitStatusSuccess forSelector:@selector(testRouting)];
+}
+
 - (void)testShouldBeNorth
 {
 	CLLocationCoordinate2D northPoint;

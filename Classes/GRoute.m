@@ -72,25 +72,29 @@
 								object:(id)object 
 {
 	NSString *coordinatesString = [[[resource valueForKeyPath:@"kml.Document.Placemark"] lastObject] valueForKeyPath:@"GeometryCollection.LineString.coordinates"];
-	//GRoute *route = [[GRoute alloc] initWithArray:[coordinatesString componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@","]]]
-	
-	NSLog(@"%@",coordinatesString);
-	//NSString *regexString  = @"\\s+";
-	//NSArray  *splitArray   = NULL;
-	//splitArray = [coordinatesString componentsSeparatedByRegex:regexString];
-	//NSLog(@"%@",splitArray);
+	NSArray *coordsSplit = [coordinatesString componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@" "]];
+	NSMutableArray *coordinates = [[NSMutableArray alloc] init];
+	for (id item in coordsSplit) {
+		[coordinates addObject:[item componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@","]]];
+	}
+	GRoute *route = [[GRoute alloc] initWithArray:coordinates];
+	[object performSelector:@selector(routeLoaded:) withObject:route];
+	[route release];
 }
 
 - (id)initWithArray:(NSArray*)ar
 {
 	if(self = [super init]) {
+		NSMutableArray *tmpSteps = [[NSMutableArray alloc] init];
 		for (id item in ar) {
-			CLLocation *c;
-			c.coordinate.latitude	= [[item objectAtIndex:0] floatValue];
-			c.coordinate.longitude = [[item objectAtIndex:1] floatValue];
-			//[self.steps addObject:c];
+			if ([item count]>1) {
+				CLLocation *c = [[CLLocation alloc] initWithLatitude:[[item objectAtIndex:0] floatValue] longitude:[[item objectAtIndex:1] floatValue]];
+				NSLog(@"%@",c);
+				[tmpSteps addObject:c];
+			}
 		}
-		
+		self.steps = [tmpSteps mutableCopy];
+		[tmpSteps release];
 	}
 	return self;
 }
