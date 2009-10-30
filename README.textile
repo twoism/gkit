@@ -33,5 +33,3 @@ cornerTavern.longitude = -84.440544;
 
 [GRoute getRouteFromLocation:myHouse toLocation:cornerTavern withDelegate:self];
 </pre>
-
-Working on adding route coordinates for map overlays.
