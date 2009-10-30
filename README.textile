@@ -20,6 +20,18 @@ cornerTavern.latitude	= 33.679771;
 cornerTavern.longitude = -84.440544;
 
 [GDirection getDirectionsFromLocation:myHouse toLocation:cornerTavern withDelegate:self];
+
+// Routing (Returns geo locations for drawing route polylines)
+
+CLLocationCoordinate2D myHouse;
+myHouse.latitude	= 33.760174;
+myHouse.longitude = -84.332780;
+
+CLLocationCoordinate2D cornerTavern;
+cornerTavern.latitude	= 33.679771;
+cornerTavern.longitude = -84.440544;
+
+[GRoute getRouteFromLocation:myHouse toLocation:cornerTavern withDelegate:self];
 </pre>
 
 Working on adding route coordinates for map overlays.
