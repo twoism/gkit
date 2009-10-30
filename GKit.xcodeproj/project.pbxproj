@@ -36,6 +36,7 @@
 		D49830E2109A3378007270CE /* GDirectionStep.m in Sources */ = {isa = PBXBuildFile; fileRef = D49830E0109A3378007270CE /* GDirectionStep.m */; };
 		D49831FA109A5528007270CE /* GRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = D49831F9109A5528007270CE /* GRoute.m */; };
 		D49831FB109A5528007270CE /* GRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = D49831F9109A5528007270CE /* GRoute.m */; };
+		D4B0E7FD109B50280037807B /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B0E7FC109B50280037807B /* RegexKitLite.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +84,8 @@
 		D49830E0109A3378007270CE /* GDirectionStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDirectionStep.m; sourceTree = "<group>"; };
 		D49831F8109A5528007270CE /* GRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRoute.h; sourceTree = "<group>"; };
 		D49831F9109A5528007270CE /* GRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRoute.m; sourceTree = "<group>"; };
+		D4B0E7FB109B50280037807B /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		D4B0E7FC109B50280037807B /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +223,7 @@
 		D49831E4109A450A007270CE /* GKit */ = {
 			isa = PBXGroup;
 			children = (
+				D4B0E7FA109B50180037807B /* RegexKitLite */,
 				D4871DC41097D11000994658 /* Categories */,
 				D4871DB71097CF4100994658 /* GPhoneNumber.h */,
 				D4871DB81097CF4100994658 /* GPhoneNumber.m */,
@@ -233,6 +237,15 @@
 				D49831F9109A5528007270CE /* GRoute.m */,
 			);
 			name = GKit;
+			sourceTree = "<group>";
+		};
+		D4B0E7FA109B50180037807B /* RegexKitLite */ = {
+			isa = PBXGroup;
+			children = (
+				D4B0E7FB109B50280037807B /* RegexKitLite.h */,
+				D4B0E7FC109B50280037807B /* RegexKitLite.m */,
+			);
+			name = RegexKitLite;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,6 +336,7 @@
 				D42B76B71099F090002CE90A /* GDirection.m in Sources */,
 				D49830E2109A3378007270CE /* GDirectionStep.m in Sources */,
 				D49831FB109A5528007270CE /* GRoute.m in Sources */,
+				D4B0E7FD109B50280037807B /* RegexKitLite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 #import "GRoute.h"
+#import "RegexKitLite.h"
 
 @implementation GRoute
 
@@ -71,8 +72,13 @@
 								object:(id)object 
 {
 	NSString *coordinatesString = [[[resource valueForKeyPath:@"kml.Document.Placemark"] lastObject] valueForKeyPath:@"GeometryCollection.LineString.coordinates"];
-	GRoute *route = [[GRoute alloc] initWithArray:[coordinatesString componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@","]]]
+	//GRoute *route = [[GRoute alloc] initWithArray:[coordinatesString componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@","]]]
+	
 	NSLog(@"%@",coordinatesString);
+	//NSString *regexString  = @"\\s+";
+	//NSArray  *splitArray   = NULL;
+	//splitArray = [coordinatesString componentsSeparatedByRegex:regexString];
+	//NSLog(@"%@",splitArray);
 }
 
 - (id)initWithArray:(NSArray*)ar
