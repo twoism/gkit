@@ -278,7 +278,7 @@
 							<array>
 								<array>
 									<integer>14</integer>
-									<integer>13</integer>
+									<integer>3</integer>
 									<integer>2</integer>
 									<integer>0</integer>
 								</array>
@@ -319,7 +319,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>D474DBAE1096AA5800BD64E8</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>GLocationTest.m</string>
+								<string>GRoute.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -327,11 +327,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>D474DBAF1096AA5800BD64E8</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>GLocationTest.m</string>
+										<string>GRoute.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>D49832B5109A6490007270CE</string>
+										<string>D49832AB109A60DF007270CE</string>
 										<key>history</key>
 										<array>
 											<string>D474DBE21096ABD300BD64E8</string>
@@ -344,8 +344,10 @@
 											<string>D4983200109A57E1007270CE</string>
 											<string>D4983201109A57E1007270CE</string>
 											<string>D4983204109A57E1007270CE</string>
-											<string>D498329E109A5FF3007270CE</string>
 											<string>D4983248109A5A9F007270CE</string>
+											<string>D498329E109A5FF3007270CE</string>
+											<string>D498329F109A5FF3007270CE</string>
+											<string>D49832A7109A603E007270CE</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -359,18 +361,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1233, 773}}</string>
+								<string>{{0, 0}, {1233, 541}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 59 1440 819 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>773pt</string>
+							<string>541pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>0pt</string>
+							<string>232pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -440,7 +442,9 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{0, 0}, {568, 405}}</string>
+										<string>{{10, 27}, {1233, 205}}</string>
+										<key>RubberWindowFrame</key>
+										<string>0 59 1440 819 0 0 1440 878 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -662,6 +666,10 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>D49832A9109A603E007270CE</string>
+		<string>D49831EA109A452E007270CE</string>
+		<string>D498318F109A3EA2007270CE</string>
+		<string>D4983190109A3EA2007270CE</string>
 		<string>/Users/twoism/dev/cocoa/GKit/GKit.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
