@@ -72,7 +72,7 @@
 								object:(id)object 
 {
 	NSString *coordinatesString = [[[resource valueForKeyPath:@"kml.Document.Placemark"] lastObject] valueForKeyPath:@"GeometryCollection.LineString.coordinates"];
-	NSArray *coordsSplit = [coordinatesString componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@" "]];
+	NSArray *coordsSplit				= [coordinatesString componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@" "]];
 	NSMutableArray *coordinates = [[NSMutableArray alloc] init];
 	for (id item in coordsSplit) {
 		[coordinates addObject:[item componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@","]]];
@@ -89,7 +89,6 @@
 		for (id item in ar) {
 			if ([item count]>1) {
 				CLLocation *c = [[CLLocation alloc] initWithLatitude:[[item objectAtIndex:0] floatValue] longitude:[[item objectAtIndex:1] floatValue]];
-				NSLog(@"%@",c);
 				[tmpSteps addObject:c];
 			}
 		}

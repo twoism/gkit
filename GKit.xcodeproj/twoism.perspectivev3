@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>ActivePerspectiveName</key>
-	<string>Debug</string>
+	<string>Project</string>
 	<key>AllowedModules</key>
 	<array>
 		<dict>
@@ -300,6 +300,8 @@
 							<string>MainColumn</string>
 							<real>185</real>
 						</array>
+						<key>RubberWindowFrame</key>
+						<string>0 59 1440 819 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -310,6 +312,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -327,12 +331,14 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>D46B14FC109B54E500A27CCB</string>
+										<string>D46B1503109B56D400A27CCB</string>
 										<key>history</key>
 										<array>
 											<string>D46B1494109B512A00A27CCB</string>
 											<string>D46B14F2109B54B600A27CCB</string>
-											<string>D46B14F3109B54B600A27CCB</string>
+											<string>D46B1500109B56D400A27CCB</string>
+											<string>D46B1501109B56D400A27CCB</string>
+											<string>D46B1502109B56D400A27CCB</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -347,6 +353,8 @@
 							<dict>
 								<key>Frame</key>
 								<string>{{0, 0}, {1233, 535}}</string>
+								<key>RubberWindowFrame</key>
+								<string>0 59 1440 819 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -424,6 +432,8 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {1233, 211}}</string>
+										<key>RubberWindowFrame</key>
+										<string>0 59 1440 819 0 0 1440 878 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -496,8 +506,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXProjectModuleGUID</key>
@@ -509,8 +517,6 @@
 					<dict>
 						<key>Frame</key>
 						<string>{{0, 0}, {1440, 773}}</string>
-						<key>RubberWindowFrame</key>
-						<string>0 59 1440 819 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugCLIModule</string>
@@ -585,11 +591,7 @@
 							</array>
 							<key>Frame</key>
 							<string>{{720, 0}, {720, 80}}</string>
-							<key>RubberWindowFrame</key>
-							<string>0 59 1440 819 0 0 1440 878 </string>
 						</dict>
-						<key>RubberWindowFrame</key>
-						<string>0 59 1440 819 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugSessionModule</string>
@@ -653,7 +655,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>D46B14FD109B54E500A27CCB</string>
 		<string>D46B14B0109B528900A27CCB</string>
 		<string>D46B14A7109B514100A27CCB</string>
 		<string>/Users/twoism/dev/cocoa/GKit/GKit.xcodeproj</string>
